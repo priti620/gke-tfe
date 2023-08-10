@@ -14,3 +14,9 @@ provider "google" {
   zone    = "us-central1-a"
   credentials  ="keys.json"
 }
+
+
+provider "google-beta" {
+  credentials = "keys.json"
+  project     = "anthos-installation"
+}
