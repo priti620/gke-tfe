@@ -5,12 +5,12 @@ variable "project_id" {
 
 variable "cluster_name" {
   description = "The name for the GKE cluster"
-  default     = "tfe-cluster"
+  default     = "tfe-gke"
 }
 
 variable "env_name" {
   description = "The environment for the GKE cluster"
-  default     = "tfe-test"
+  default     = "tfe"
 }
 
 variable "region" {
@@ -20,12 +20,12 @@ variable "region" {
 
 variable "network" {
   description = "The VPC network created to host the cluster in"
-  default     = "tfe-network"
+  default     = "gke-network"
 }
 
 variable "subnetwork" {
   description = "The subnetwork created to host the cluster in"
-  default     = "tfe-subnet"
+  default     = "gke-subnet"
 }
 
 variable "ip_range_pods_name" {
